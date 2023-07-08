@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px) {
+    [aria-controls ="navbarDropdown"] {
+        display: block;
+    }
+
+
+    [aria-expanded="false"] ~ .nav-links {
+        display: none;
+    }   
+
+    [aria-expanded="true"] ~ .nav-links {
+        display: block;
+    }
+
+    nav {flex-wrap: wrap;}
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .nav-btn {margin: auto;}
+
+    .navbtn {
+        border: none;
+        background-color: transparent;
+        
+    }
+
+    .container  { flex-wrap: wrap;}
+
+    .container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-right { margin-top: 100px;}
+
+    .container-left h2, .container-left p {
+        text-align: center;
+    }
+
+    .benefits-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        padding-top: 100px;
+        justify-items: center;
+    }
+
+    .example-left h3 {
+        text-align: center;
+    }
+
+    .video-btn {
+        margin: auto;
+    }
+
+    .example-right { margin-top: 15px;}
+    .play-btn {left: 44%;}
+
+    .testimonial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+.testimonial-right {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.right-text {
+    text-align: center;
+}
+
+.prize-cards {flex-wrap: wrap;}
+
+.hire-us {flex-wrap: wrap;}
+
+.hire-left {
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hire-right {height: 700px;}
+
+.footer-top {
+    margin: 100px 50px 0px 50px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contacts {grid-row: 1 / 3;}
+
+}
