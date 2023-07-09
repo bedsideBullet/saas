@@ -12,7 +12,9 @@
         display: block;
     }
 
-    nav {flex-wrap: wrap;}
+    nav {
+        flex-wrap: wrap;  
+    }
     
     .nav-links {
         display: flex;
@@ -69,40 +71,141 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-.testimonial-right {
+    .testimonial-right {
     margin-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 100px;
+    }
+
+    .right-text {
+        text-align: center;
+    }
+
+    .prize-cards {flex-wrap: wrap;}
+
+    .hire-us {flex-wrap: wrap;}
+
+    .hire-left {
+        padding: 50px;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .hire-right {height: 700px;}
+
+    .footer-top {
+        margin: 100px 50px 0px 50px;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .footer-social { max-width: 400px;}
+
+    .contacts {grid-row: 1 / 3;}
 }
 
-.right-text {
-    text-align: center;
-}
+@media screen and (max-width: 360px) {
 
-.prize-cards {flex-wrap: wrap;}
+    .nav-links ul {
+        flex-direction: column;
+        padding-right: 25px;
+    } 
 
-.hire-us {flex-wrap: wrap;}
+    .nav-links ul li {padding-top: 25px;}
 
-.hire-left {
-    padding: 50px;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-}
+    .play-btn {
+        left: 43%;
+        bottom: 100px;
+        width: 50px;
+        height: 50px;
+    }
 
-.hire-right {height: 700px;}
+    .testimoial-left {height: 300px;}
+    .testimonial-right {padding: 0 30px;}
+    
+    .company-logos {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.footer-top {
-    margin: 100px 50px 0px 50px;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
+    .company {padding: 25px;}
 
-.contacts {grid-row: 1 / 3;}
+    .small-cards {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    
+    .hire-left {text-align: center;}
+    .hire-left hr {margin: 50px 0px;}
 
-}
+    .hire-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, select, textarea {margin: 5px;}
+    
+    form h4 {margin: 15px;}
+    .check {margin: 5px;}
+    .desktop {display: none;}
+    .hire-right .btn {margin: 25px;}
+
+    .dots {
+        width: 150px;
+        margin-left: 23px;
+         position: relative;
+    }
+    
+    .test-img {
+        max-width: 250px;
+        position: relative;
+        left: 50px;
+        top: -317px;
+    }
+    
+    
+    .benefits-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .example-right img { width: 100%;}
+    
+    .hire-left {flex-wrap: wrap;}
+    
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address   {
+        width: 300px;
+        padding-left: 40px;
+        margin-top: 30px;
+    }
+
+    .footer-ul  {align-items: center;}
+    .footer-bottom {flex-wrap: wrap;}
+    .footer-bottom nav {padding-right: 30px;}
+    .footer-social {
+        flex-wrap: wrap;
+        padding-left: 80px;
+    }
+
+    .social-icons {margin-bottom: 10px;}
+    #country {margin-left: 10px;}   
+
+} 
