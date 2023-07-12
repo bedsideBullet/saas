@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="header-logo">
                 <img src="./saas-project-assets/project_logo/logo.svg" alt="front logo">
             </div>
@@ -388,6 +388,18 @@
             </div>
     </footer>]
     <script>
+        
+        const nav = document.getElementById('navbar');
+        window.onscroll = function() {
+            if (window.pageYOffset > 400) {
+                nav.classlist.add('sticky');
+            } else {
+                nav.classlist.remove('sticky');
+            };
+        }
+        
+        
+        
         const navButton = document.querySelector('button[aria-expanded]')
 
         function toggleNav({ target }) {
